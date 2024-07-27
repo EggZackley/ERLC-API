@@ -29,4 +29,4 @@ client.once("ready", async () => {
     client.guilds.cache.get(guildID).channels.cache.get(channelID).send({embeds: [embed]});
 })
 
-client.login(token);
+client.login(token); 
