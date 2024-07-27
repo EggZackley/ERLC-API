@@ -51,4 +51,4 @@ client.once("ready", async () => {
     }, 6000);
 })
 
-client.login(token);
+client.login(token); 
