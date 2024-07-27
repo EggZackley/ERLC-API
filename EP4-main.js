@@ -36,12 +36,12 @@ client.once("ready", async () => {
             embed.setTimestamp();
             var check;
             if((await db.has(`${player}_true`)) || (await db.has(`${player}_false`))) {
-                (await db.get(`${player}_${join}`).forEach(async dat => {
+                (await db.get(`${player}_${join}`)).forEach(async dat => {
                     if(parseInt(dat) === timeStamp) {
                         check = true;
                         return;
                     }
-                }));
+                });
             }
             if(!check) {
                 await db.push(`${player}_${join}`, `${timeStamp}`);
@@ -51,4 +51,4 @@ client.once("ready", async () => {
     }, 6000);
 })
 
-client.login(token); 
+client.login(token);
