@@ -3,5 +3,6 @@
     "api": "PUT YOUR ERLC API KEY HERE",
     "url": "https://api.policeroleplay.community/v1",
     "guildID": "PUT YOUR SERVER ID HERE",
-    "channelID": "PUT YOUR RESPECTIVE CHANNEL ID HERE"
+    "channelID": "PUT YOUR RESPECTIVE CHANNEL ID HERE",
+    "dataToken": "PUT YOUR DATABASE TOKEN HERE"
 }
