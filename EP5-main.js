@@ -24,7 +24,7 @@ client.once('ready', async () => {
         embed.setTimestamp();
         if(Object.values(data).at(0) == null) return;
         Object.values(data).forEach(async v => {
-            const getUser = await fetch(`https://users.roblox.com/v/users/${v}`, {
+            const getUser = await fetch(`https://users.roblox.com/v1/users/${v}`, {
                 method: 'GET',
             });
             await getUser.json().then(u => {
