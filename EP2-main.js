@@ -18,7 +18,7 @@ client.once("ready", async () => {
     const data = await response.json(); 
     const embed = new EmbedBuilder();
     embed.setDescription("Player List");
-    data.forEach(player => {
+    Object.values(data).forEach(player => {
         let callSign = player["Callsign"];
         if(callSign == null) {
             callSign = "N/A"
